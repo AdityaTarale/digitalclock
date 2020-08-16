@@ -1,0 +1,83 @@
+@import url(https://allfont.net/allfont.css?fonts=digital-7-italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(231, 74, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Digital-7 Italic", arial;
+}
+.top {
+  margin: 0;
+  width: 25rem;
+  height: 15rem;
+  background: #000;
+  border: 1px solid rgb(75, 75, 75);
+  clip-path: polygon(11% 90%, 89% 90%, 100% 100%, 0 100%);
+  box-shadow: 65px 41px 16px -33px rgba(0, 0, 0, 0.52);
+}
+.clock {
+  position: relative;
+  width: 25rem;
+  height: 15rem;
+  background: rgb(58, 58, 58);
+  clip-path: polygon(0 0, 100% 0, 97% 35%, 3% 35%);
+}
+.brand {
+  position: absolute;
+  top: 4rem;
+  left: 1.1rem;
+  font-size: 1rem;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  color: rgb(204, 204, 204);
+  z-index: 70;
+}
+.digital {
+  position: relative;
+}
+
+#timescr {
+  position: absolute;
+  top: 1rem;
+  left: 5.1rem;
+  font-size: 3rem;
+  animation: timeanimation 10s infinite;
+}
+@keyframes timeanimation {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: orange;
+  }
+  75% {
+    color: rgb(13, 240, 5);
+  }
+  100% {
+    color: fuchsia;
+  }
+}
+/* #datescr {
+  position: absolute;
+  top: 3.5rem;
+  left: 10.5rem;
+  color: #52c5a4;
+  font-size: 1.5rem;
+  animation: dateblink 1s step-end infinite;
+}
+@keyframes dateblink {
+  50% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+} */
